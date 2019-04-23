@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true">
+	<include resource="org/springframework/boot/logging/logback/base.xml"/>
+	
+	<appender name="STACKIFY"
+		class="com.stackify.log.logback.StackifyLogAppender">
+		<apiKey></apiKey>
+		<application>Solicitacoes</application>
+		<environment>dev</environment>
+	</appender>
+
+	<root level="DEBUG">
+		<appender-ref ref="STACKIFY" />
+	</root>
+</configuration>

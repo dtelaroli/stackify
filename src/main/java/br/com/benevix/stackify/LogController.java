@@ -10,7 +10,7 @@ public class LogController {
 
 	@GetMapping("/stackify")
     public String stackify() {
-    	com.stackify.api.common.log.direct.Logger.queueMessage("INFO", "BOOT STACKIFY MESSAGE");
+//    	com.stackify.api.common.log.direct.Logger.queueMessage("INFO", "BOOT STACKIFY MESSAGE");
         return "test stackify";
     }
     

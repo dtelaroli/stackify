@@ -5,6 +5,7 @@ services:
       build: .
       ports:
          - 8080:8080
+      pid: host
       environment:
          LOG_ENV: dev
          LOG_APP: Stackify
