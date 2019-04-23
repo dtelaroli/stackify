@@ -5,6 +5,10 @@ services:
       build: .
       ports:
          - 8080:8080
+      environment:
+         LOG_ENV: dev
+         LOG_APP: Stackify
+         LOG_LEVEL: DEBUG
       volumes:
          - /usr/local/stackify:/usr/local/stackify
          

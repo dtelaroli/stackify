@@ -14,12 +14,6 @@ public class LogController {
         return "test stackify";
     }
     
-	@GetMapping("/log4j")
-	public String log4j() {
-    	org.apache.log4j.Logger.getLogger(getClass()).info("BOOT LOG4J MESSAGE");
-		return "test log4j";
-	}
-	
 	@GetMapping("/logback")
 	public String logback() {
     	org.slf4j.LoggerFactory.getLogger(getClass()).info("BOOT LOGBACK MESSAGE");
@@ -29,6 +23,6 @@ public class LogController {
 	@GetMapping("/java")
 	public String java() {
     	java.util.logging.Logger.getLogger(getClass().getCanonicalName()).info("BOOT JAVALOGGING MESSAGE");
-		return "test logback";
+		return "test java";
 	}
 }
