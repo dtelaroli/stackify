@@ -5,7 +5,6 @@ Application for tests with Stackify Retrace.
 ## Endpoins
 
 ```
-/log4j
 /logback
 /stackify
 /java
@@ -14,9 +13,7 @@ Application for tests with Stackify Retrace.
 ## Configuration
 
 You should configure your apiKey on files:
-- src/main/resources/log4j.properties
 - src/main/resources/logback.xml
-- src/main/resources/stackify-api.properties
 
 ## Using
 

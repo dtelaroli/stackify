@@ -1,4 +1,4 @@
-FROM spring
+FROM openjdk:8-jdk
 
 COPY target/stackify.jar app.jar
 
